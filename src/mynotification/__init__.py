@@ -11,6 +11,6 @@ class Notification:
 
             send_notification(title=self.title, message=self.message)
         if self.platform in desktop:
-            from src.mynotification.notification_android import send_notification
+            from src.mynotification.notification_desktop import send_notification
 
             send_notification(title=self.title, message=self.message)
