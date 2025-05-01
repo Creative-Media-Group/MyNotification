@@ -12,12 +12,12 @@ class Notification:
         print(f"send_mynotification called. Platform: {self.platform}")
         if self.platform == "android":
             print("Using Android notification handler.")
-            from src.mynotification.notification_android import send_notification
+            from mynotification.notification_android import send_notification
 
             send_notification(title=self.title, message=self.message)
         elif self.platform in desktop:
             print("Using desktop notification handler.")
-            from src.mynotification.notification_desktop import send_notification
+            from mynotification.notification_desktop import send_notification
 
             send_notification(title=self.title, message=self.message)
         else:
