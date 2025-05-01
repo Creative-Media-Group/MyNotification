@@ -2,7 +2,7 @@ class Notification:
     def __init__(self, title: str, message: str, platform: str = "linux"):
         self.title = title
         self.message = message
-        self.platform = platform
+        self.platform = platform.lower()
         print(
             f"Notification initialized with title='{self.title}', message='{self.message}', platform='{self.platform}'"
         )
