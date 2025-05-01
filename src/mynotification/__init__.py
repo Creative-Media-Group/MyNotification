@@ -1,5 +1,5 @@
 class Notification:
-    def init(self, title, message, platform):
+    def __init__(self, title: str, message: str, platform: str = "desktop"):
         self.title = title
         self.message = message
         self.platform = platform
