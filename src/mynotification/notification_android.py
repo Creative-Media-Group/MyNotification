@@ -1,7 +1,7 @@
 from jnius import autoclass
 
 
-def send_notification(title, message):
+def send_notification(title: str, message: str):
     PythonActivity = autoclass("org.kivy.android.PythonActivity")
     Context = autoclass("android.content.Context")
     NotificationBuilder = autoclass("android.app.Notification$Builder")
