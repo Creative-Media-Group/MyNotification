@@ -8,7 +8,7 @@ class Notification:
         )
 
     def send_mynotification(self):
-        desktop = ["linux", "windows", "macos"]
+        desktop = ["linux", "win32", "macos"]
         print(f"send_mynotification called. Platform: {self.platform}")
         if self.platform == "android":
             print("Using Android notification handler.")
