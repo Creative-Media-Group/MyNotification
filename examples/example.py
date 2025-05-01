@@ -1,4 +1,7 @@
 from mynotification import Notification
+import sys
 
-x = Notification(title="test", message="test")
+platform = sys.platform
+print(platform)
+x = Notification(title="test", message="test",platform=platform)
 x.send_mynotification()
