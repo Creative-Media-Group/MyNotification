@@ -28,9 +28,8 @@ def send_notification(title: str, message: str):
         notification_id = 1
         notification = builder.build()
         notification_service.notify(notification_id, notification)
-        status_text.value = "Notification sent succesfully."
-        status_text.collor = "green"
+        print("Notification sent succesfully.")
+        # status_text.collor = "green"
 
     except:
-        status_text.value = f"Failed to seld notification: {traceback.format_exc()}"
-        status_text.color = "red"
+        pass
